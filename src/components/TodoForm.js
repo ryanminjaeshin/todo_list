@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function todoForm() {
+function TodoForm() {
   const [input, setInput] = useState('');
 
   return (
@@ -11,4 +11,4 @@ function todoForm() {
   )
 }
 
-export default todoForm
+export default TodoForm
