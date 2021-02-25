@@ -5,6 +5,7 @@ function TodoList() {
   const [todos, setTodos] = useState([]);
 
   const addTodo = todo => {
+    // https://stackoverflow.com/questions/63543170/how-can-i-pass-my-todo-component-data-into-my-todolist-component-using-react-hoo
     if(!todo.text || /^\s*$/.test(todo.text)) {
       return
     }
@@ -12,7 +13,7 @@ function TodoList() {
     const newTodos = [todo, ...todos];
 
     setTodos(newTodos)
-  }
+  };
 
   return (
     <div>
