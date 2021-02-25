@@ -18,7 +18,7 @@ function TodoList() {
   return (
     <div>
       <h1>Plan for Today?</h1>
-      <TodoForm />
+      <TodoForm onSubmit={addTodo} />
     </div>
   )
 }
